@@ -1165,6 +1165,42 @@
     </profiles>
   </telegram>
   <telegram rorg="0xD2" type="VLD" description="VLD Telegram">
+
+
+    <profiles func="0x32" description="A.C. Current Clamp">
+      <profile type="0x02" description="Type 0x02">
+
+        <data>
+          <enum description="Powe3r Fail" shortcut="PF" offset="0" size="1">
+            <item description="False" value="0" />
+            <item description="True" value="1" />
+          </enum>
+
+          <enum description="Divisor for all channels" shortcut="DIV" offset="1" size="1">
+            <item description="x/1" value="0" />
+            <item description="x/10" value="1" />
+          </enum>
+
+
+          <enum description="Channel 1" shortcut="CH1" unit="A" offset="8" size="12">
+            <rangeitem description="Current value" start="0" end="4095" />
+          </enum>
+
+          <enum description="Channel 2" shortcut="CH2" unit="A" offset="20" size="12">
+            <rangeitem description="Current value" start="0" end="4095" />
+          </enum>
+
+          <enum description="Channel 3" shortcut="CH3" unit="A" offset="32" size="12">
+            <rangeitem description="Current value" start="0" end="4095" />
+          </enum>
+
+        </data>
+
+
+      </profile>
+    </profiles>
+
+
     <profiles func="0x01" description="Electronic switches and dimmers with Energy Measurement and Local Control">
       <profile type="0x01" description="Electronic switch with Local Control">
         <command description="command indentifier" shortcut="CMD" offset="4" size="4">
