@@ -1171,7 +1171,7 @@
       <profile type="0x02" description="Type 0x02">
 
         <data>
-          <enum description="Powe3r Fail" shortcut="PF" offset="0" size="1">
+          <enum description="Power Fail" shortcut="PF" offset="0" size="1">
             <item description="False" value="0" />
             <item description="True" value="1" />
           </enum>
